@@ -67,7 +67,11 @@ function App() {
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-brand"></div>
           </div>
         ) : activeSet ? (
-          <FlashCardGame data={activeSet} onBack={() => setActiveSet(null)} />
+          <FlashCardGame
+            key={activeSet[0]?.word || 'init'}
+            data={activeSet}
+            onBack={() => setActiveSet(null)}
+          />
         ) : (
           /* --- MENU GRID --- */
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
