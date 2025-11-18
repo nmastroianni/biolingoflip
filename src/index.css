@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+:root {
+  /* Hue remains the same */
+  --brand-hue: 240;
+
+  /* --- UPDATED BRAND COLORS FOR CONTRAST --- */
+  /* Darkened Lightness to ensure White text passes WCAG AA */
+
+  /* Main Brand: 45% Lightness (was 55%) */
+  --color-brand: oklch(45% 0.2 var(--brand-hue));
+
+  /* Hover: 35% Lightness (was 45%) */
+  --color-brand-hover: oklch(35% 0.2 var(--brand-hue));
+
+  /* Gradient Start: 60% Lightness (Was 85% - THIS WAS THE CULPRIT) */
+  --color-brand-light: oklch(60% 0.15 var(--brand-hue));
+
+  /* --- SURFACE (Keep these light) --- */
+  --color-bg-main: oklch(97% 0.01 var(--brand-hue));
+  --color-surface: oklch(100% 0 0);
+  --color-border: oklch(90% 0.02 var(--brand-hue));
+
+  /* --- TEXT --- */
+  --color-text-main: oklch(20% 0.05 var(--brand-hue));
+  --color-text-muted: oklch(55% 0.05 var(--brand-hue));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode can usually tolerate slightly lighter colors 
+       because the surrounding context is dark, but let's keep them robust. */
+    --color-brand: oklch(55% 0.2 var(--brand-hue));
+    --color-brand-hover: oklch(65% 0.2 var(--brand-hue));
+
+    --color-bg-main: oklch(10% 0.02 var(--brand-hue));
+    --color-surface: oklch(15% 0.03 var(--brand-hue));
+    --color-border: oklch(25% 0.05 var(--brand-hue));
+
+    --color-text-main: oklch(95% 0.01 var(--brand-hue));
+    --color-text-muted: oklch(70% 0.05 var(--brand-hue));
+  }
+}
+
+@theme {
+  --color-brand: var(--color-brand);
+  --color-brand-hover: var(--color-brand-hover);
+  --color-brand-light: var(--color-brand-light);
+
+  --color-bg-main: var(--color-bg-main);
+  --color-surface: var(--color-surface);
+  --color-border: var(--color-border);
+
+  --color-text-main: var(--color-text-main);
+  --color-text-muted: var(--color-text-muted);
+}
+
+/* ... utilities ... */
+.perspective {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari support */
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
