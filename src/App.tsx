@@ -23,7 +23,7 @@ function App() {
       })
       .then((data) => setMenu(data))
       .catch((err) => setError(err.message))
-  }, [])
+  }, [baseUrl])
 
   const loadSet = async (setId: string) => {
     setLoading(true)

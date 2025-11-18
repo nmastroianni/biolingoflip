@@ -76,7 +76,7 @@ export default function FlashCardGame({ data, onBack }: FlashCardGameProps) {
           {/* CHANGE: bg-white -> bg-surface */}
           {/* CHANGE: text-gray-800 -> text-text-main */}
           <div className="absolute w-full h-full backface-hidden bg-surface text-text-main border-2 border-border rounded-2xl shadow-xl flex items-center justify-center p-8 text-center rotate-y-180">
-            <p className="text-2xl font-medium leading-relaxed">
+            <p className="text-lg lg:text-2xl font-medium leading-relaxed text-left">
               {currentCard.definition}
             </p>
           </div>
