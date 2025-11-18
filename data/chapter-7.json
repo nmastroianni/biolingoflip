@@ -1,122 +1,135 @@
 [
   {
     "word": "cell",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "the basic unit of all forms of life"
   },
   {
     "word": "cell theory",
-    "definition": "the act of noticing and describing events or processes in a systematic way"
+    "definition": "the fundamental concept that all living things are made of cells which are the basic unit of structure and function and that cells come from pre-existing cells"
   },
   {
     "word": "cell membrane",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "thin flexible barrier that surrounds all cells regulating what enters and exits the cell"
   },
   {
     "word": "nucleus",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "structure that contains the cell's genetic material often referred to as the 'brains' of the cell"
   },
   {
     "word": "eukaryote",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "organism whose cells have a nucleus 'eu' means true and 'karyo' refers to the nucleus (they truly have a nucleus)"
   },
   {
     "word": "prokaryote",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "unicellular organism that lacks a nucleus 'pro' means before 'karyo' refers to the nucleus (these came before the nucleus)"
   },
   {
     "word": "cytoplasm",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "in eukaryotes, it's all the cellular contents outside of the nucleus; in prokaryotes, its all of the cell's contents"
   },
   {
     "word": "organelle",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "specialized structure that performs functions within eukaryotic cells"
   },
   {
     "word": "vacuole",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "organelle that stores materials like water, salts, proteins, and carbs; often referred to as 'cellular tupperware'"
   },
   {
     "word": "lysosome",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "organelle that breaks down substances (lipids, carbs, proteins) into smaller molecules that the cell can use; often referred to as the 'garbage men' of the cell"
   },
   {
     "word": "cytoskeleton",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "network of protein filaments in eukaryotic cells giving the cell shape and internal organization; helps in the movement and internal transport; often referred to as the 'cellular highway'"
   },
   {
     "word": "centriole",
-    "definition": "the act of noticing and describing events or processes in a systematic way"
+    "definition": "structure in animal cells that helps organize the cell division process (forms the mitotic spindle)"
   },
   {
     "word": "ribosome",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "organelle made of RNA and protein found in the cytoplasm and on the rough endoplasmic reticulum (rER). Makes protein and is what makes the rER look rough"
   },
   {
     "word": "endoplasmic reticulum",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "internal membrane system found in eukaryotic cells where components of the cell are assembled; comes in two varities: smooth (lipid making) and rough (protein making)"
   },
   {
     "word": "Golgi apparatus",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "organelle in cells that modifies, sorts, and packagges proteins (and other materials) from the endoplasmic reticulum (ER) for storage within the cell or release from the cell; often referred to as the 'UPS' of the cell"
   },
   {
     "word": "chloroplast",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "organelle found in plant cells (and some others) that captures light energy and converts it into chemical energy (site of photosynthesis)"
   },
   {
     "word": "cell wall",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "a strong supporting layer surrounding the cell membrane of some cells (most commonly associated with plant cells)"
   },
   {
     "word": "lipid bilayer",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "flexibile double-layered sheet that makes up the cell membrane forming the barrier between the cell and its surroundings"
   },
   {
     "word": "selectively permeable",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "property of membranes allowing some materials to pass across it but not others; also known as 'semi-permeable'"
+  },
+  {
+    "word": "mitochondrion",
+    "definition": "organelle that converts chemical energy from food into compounds that are convenient for the cell; often referred to as the 'powerhouse' of the cell"
   },
   {
     "word": "diffusion",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "a process where particles move from an area of high concentration to an area of low concentration (think spraying perfume in one corner of the room, does it just stay in that corner? No. It difuses.e)"
   },
   {
     "word": "osmosis",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "difussion of water through a selectively permeable membrane"
   },
   {
     "word": "isotonic",
-    "definition": "the act of noticing and describing events or processes in a systematic way"
+    "definition": "when comparing two solutions, the two solutions have the same concentration are isotonic to each other"
   },
   {
     "word": "hypertonic",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "when comparing two solutions, this is the solution tha thas the higher concentration compared to the other"
   },
   {
     "word": "hypotonic",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "when comparing two solutions, this is the solution that has the lower concentration to the other"
   },
   {
     "word": "osmotic pressure",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "pressure that must be applied to prevent movement across a selectively permeable membrane"
   },
   {
+    "word": "facilitated diffusion",
+    "definition": "a type of diffusion that is made possible with the help (facilitation) of a protein channel"
+  },
+  {
+    "word": "aquaporin",
+    "definition": "a channel protein within a cell membrane dedicated to the passage of water"
+  },
+
+  {
     "word": "homeostasis",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "the maintenance of a relatively constante 'stable' internal physical and chemical conditions"
   },
   {
     "word": "tissue",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "a group of cells that perform a particuluar function (muscle or epithelial are examples)"
   },
   {
     "word": "organ",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "group of tissues workign together to perform related funtions"
   },
   {
     "word": "organ system",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "group of organs that work together to perform a function (examples: digestive or nervous)"
   },
   {
     "word": "receptor",
-    "definition": "a process of gathering and analyzing evidence about the world"
+    "definition": "on or in a cell, a specific protein to whose shape fits a specific molecular messenger (like a hormone)"
   }
 ]
