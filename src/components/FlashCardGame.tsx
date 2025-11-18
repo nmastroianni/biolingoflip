@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Button from './Button'
 import { shuffleArray } from '../utils' // Import the helper
 import { useSwipeable } from 'react-swipeable'
+import { motion, AnimatePresence } from 'motion/react'
 
 export interface VocabCard {
   word: string
@@ -21,8 +22,24 @@ export default function FlashCardGame({ data, onBack }: FlashCardGameProps) {
   const [currentCardIndex, setCurrentCardIndex] = useState<number>(0)
   const [isFlipped, setIsFlipped] = useState<boolean>(false)
   const [showDefFirst, setShowDefFirst] = useState<boolean>(false)
+  const [direction, setDirection] = useState<number>(0)
 
   // NEW: Swipe Handlers
+
+  const goToNextCard = () => {
+    setDirection(1) // Slide Left
+    setIsFlipped(false)
+    setCurrentCardIndex((prev) => (prev + 1) % activeDeck.length)
+  }
+
+  const goToPrevCard = () => {
+    setDirection(-1) // Slide Right
+    setIsFlipped(false)
+    setCurrentCardIndex(
+      (prev) => (prev - 1 + activeDeck.length) % activeDeck.length
+    )
+  }
+
   const handlers = useSwipeable({
     onSwipedLeft: () => goToNextCard(),
     onSwipedRight: () => goToPrevCard(),
@@ -40,6 +57,28 @@ export default function FlashCardGame({ data, onBack }: FlashCardGameProps) {
   const backText = showDefFirst ? currentCard.word : currentCard.definition
   const backSize = showDefFirst ? 'text-4xl font-bold' : 'text-2xl font-medium'
 
+  // --- ANIMATION VARIANTS ---
+  // This logic determines where the card starts and ends
+  const variants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? 300 : -300, // If Next, enter from Right. If Prev, enter from Left.
+      opacity: 0,
+      scale: 0.8,
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+      scale: 1,
+    },
+    exit: (direction: number) => ({
+      zIndex: 0,
+      x: direction < 0 ? 300 : -300, // If Next, exit to Left. If Prev, exit to Right.
+      opacity: 0,
+      scale: 0.8,
+    }),
+  }
+
   // --- ACTIONS ---
 
   const handleFlip = () => setIsFlipped(!isFlipped)
@@ -47,18 +86,6 @@ export default function FlashCardGame({ data, onBack }: FlashCardGameProps) {
   const toggleMode = () => {
     setIsFlipped(false)
     setShowDefFirst(!showDefFirst)
-  }
-
-  const goToNextCard = () => {
-    setIsFlipped(false)
-    setCurrentCardIndex((prev) => (prev + 1) % activeDeck.length)
-  }
-
-  const goToPrevCard = () => {
-    setIsFlipped(false)
-    setCurrentCardIndex(
-      (prev) => (prev - 1 + activeDeck.length) % activeDeck.length
-    )
   }
 
   // NEW: Shuffle Logic
@@ -130,32 +157,54 @@ export default function FlashCardGame({ data, onBack }: FlashCardGameProps) {
         className="relative w-full max-w-md h-80 perspective cursor-pointer group"
         onClick={handleFlip}
       >
-        <div
-          className={`relative w-full h-full preserve-3d transition-transform duration-500 ${
-            isFlipped ? 'rotate-y-180' : ''
-          }`}
-        >
-          {/* Front */}
-          <div className="absolute w-full h-full backface-hidden bg-linear-to-br from-brand-light to-brand text-white rounded-2xl shadow-xl flex items-center justify-center p-8 text-center border border-brand">
-            <h2
-              className={`${frontSize} tracking-wide drop-shadow-md ${
-                showDefFirst && 'text-left'
+        <AnimatePresence initial={false} custom={direction} mode="wait">
+          <motion.div
+            key={currentCardIndex} // Key change triggers the animation
+            custom={direction}
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+              x: { type: 'tween', duration: 0.1, ease: 'easeInOut' },
+              opacity: { duration: 0.1 },
+            }}
+            className="absolute w-full h-full cursor-pointer perspective" // Absolute allows overlap
+            onClick={handleFlip}
+          >
+            {/* The Flip Logic Wrapper */}
+            <div
+              className={`relative w-full h-full preserve-3d transition-transform duration-500 ${
+                isFlipped ? 'rotate-y-180' : ''
               }`}
             >
-              {frontText}
-            </h2>
-            <span className="absolute bottom-8 px-4 py-1.5 rounded-full bg-black/25 text-white text-xs font-bold uppercase tracking-widest shadow-sm backdrop-blur-sm">
-              Click to flip
-            </span>
-          </div>
+              {/* Front */}
+              <div className="absolute w-full h-full backface-hidden bg-linear-to-br from-brand-light to-brand text-white rounded-2xl shadow-xl flex items-center justify-center p-8 text-center border border-brand">
+                <h2
+                  className={`${frontSize} tracking-wide drop-shadow-md select-none ${
+                    showDefFirst && 'text-left'
+                  }`}
+                >
+                  {frontText}
+                </h2>
+                <span className="absolute bottom-8 px-4 py-1.5 rounded-full bg-black/25 text-white text-xs font-bold uppercase tracking-widest shadow-sm backdrop-blur-sm">
+                  Click to flip
+                </span>
+              </div>
 
-          {/* Back */}
-          <div className="absolute w-full h-full backface-hidden bg-surface text-text-main border-2 border-border rounded-2xl shadow-xl flex items-center justify-center p-8 text-center rotate-y-180">
-            <p className={`${backSize} leading-relaxed text-left`}>
-              {backText}
-            </p>
-          </div>
-        </div>
+              {/* Back */}
+              <div className="absolute w-full h-full backface-hidden bg-surface text-text-main border-2 border-border rounded-2xl shadow-xl flex items-center justify-center p-8 text-center rotate-y-180">
+                <p
+                  className={`${backSize} leading-relaxed select-none ${
+                    !showDefFirst && 'text-left'
+                  }`}
+                >
+                  {backText}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
 
       {/* Footer Controls */}
