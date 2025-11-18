@@ -9,13 +9,14 @@ interface VocabSet {
 }
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL
   const [menu, setMenu] = useState<VocabSet[]>([])
   const [activeSet, setActiveSet] = useState<VocabCard[] | null>(null)
   const [loading, setLoading] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/data/index.json')
+    fetch(`${baseUrl}data/index.json`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load menu')
         return res.json()
@@ -28,7 +29,7 @@ function App() {
     setLoading(true)
     setError(null)
     try {
-      const res = await fetch(`/data/${setId}.json`)
+      const res = await fetch(`${baseUrl}data/${setId}.json`)
       if (!res.ok) throw new Error(`Could not load set: ${setId}`)
       const data: VocabCard[] = await res.json()
       setActiveSet(data)
