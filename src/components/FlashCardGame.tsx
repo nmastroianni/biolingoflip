@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Button from './Button'
 import { shuffleArray } from '../utils' // Import the helper
+import { useSwipeable } from 'react-swipeable'
 
 export interface VocabCard {
   word: string
@@ -20,6 +21,14 @@ export default function FlashCardGame({ data, onBack }: FlashCardGameProps) {
   const [currentCardIndex, setCurrentCardIndex] = useState<number>(0)
   const [isFlipped, setIsFlipped] = useState<boolean>(false)
   const [showDefFirst, setShowDefFirst] = useState<boolean>(false)
+
+  // NEW: Swipe Handlers
+  const handlers = useSwipeable({
+    onSwipedLeft: () => goToNextCard(),
+    onSwipedRight: () => goToPrevCard(),
+    preventScrollOnSwipe: true, // Stops page scrolling while swiping the card
+    trackMouse: true, // Allows you to test swipe with mouse on desktop!
+  })
 
   if (!activeDeck || activeDeck.length === 0) return null
 
@@ -117,6 +126,7 @@ export default function FlashCardGame({ data, onBack }: FlashCardGameProps) {
 
       {/* Card Container */}
       <div
+        {...handlers}
         className="relative w-full max-w-md h-80 perspective cursor-pointer group"
         onClick={handleFlip}
       >
