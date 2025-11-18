@@ -88,7 +88,7 @@ export default function FlashCardGame({ data, onBack }: FlashCardGameProps) {
           }`}
         >
           {/* --- FRONT (Gradient) --- */}
-          <div className="absolute w-full h-full backface-hidden bg-gradient-to-br from-brand-light to-brand text-white rounded-2xl shadow-xl flex items-center justify-center p-8 text-center border border-brand">
+          <div className="absolute w-full h-full backface-hidden bg-linear-to-br from-brand-light to-brand text-white rounded-2xl shadow-xl flex items-center justify-center p-8 text-center border border-brand">
             {/* Dynamic Text and Size */}
             <h2 className={`${frontSize} tracking-wide drop-shadow-md`}>
               {frontText}
