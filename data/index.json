@@ -1,0 +1,14 @@
+[
+  {
+    "id": "chapter-1",
+    "title": "The Science of Biology",
+    "description": "Science is a way of knowing",
+    "count": 19
+  },
+  {
+    "id": "chapter-7",
+    "title": "Structure and Function of Cells",
+    "description": "Homeostasis and the cellular basis of life",
+    "count": 30
+  }
+]
