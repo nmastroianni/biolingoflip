@@ -1,0 +1,74 @@
+[
+  {
+    "word": "virus",
+    "definition": "particle made of proteins, nucleic acids, and sometimes lipids, that can replicate only be infecting living cells"
+  },
+  {
+    "word": "capsid",
+    "definition": "a protein coat surrounding a virus"
+  },
+  {
+    "word": "bacteriophage",
+    "definition": "a kind of virus that infects bacteria"
+  },
+  {
+    "word": "lytic infection",
+    "definition": "type of infection in which a virus enters a cell, makes copies of itself, and causes the cell to burst"
+  },
+  {
+    "word": "lysogenic infection",
+    "definition": "type of infection in which a virus embeds its DNA into the DNA of the host cell and is replicated along with the host cell's DNA"
+  },
+  {
+    "word": "prophage",
+    "definition": "bacteriophage DNA that is embedded in the bacterial host's DNA"
+  },
+  {
+    "word": "retrovirus",
+    "definition": "RNA virus that contains RNA as its genetic information"
+  },
+  {
+    "word": "prokaryote",
+    "definition": "unicellular organism that lacks a nucleus 'pro' means before 'karyo' refers to the nucleus (these came before the nucleus)"
+  },
+  {
+    "word": "bacillus",
+    "definition": "(plural: bacilli): rod shaped prokaryote"
+  },
+  {
+    "word": "coccus",
+    "definition": "(plural: cocci): spherical prokaryote"
+  },
+  {
+    "word": "spirillum",
+    "definition": "(plural: spirilla): spiral or corkscrew-shaped prokaryote"
+  },
+  {
+    "word": "binary fission",
+    "definition": "type of asexual reproduction  in which an organism replicates its DNA and divides in half, producing two identical daughter cells"
+  },
+  {
+    "word": "endospore",
+    "definition": "structure produced by prokaryotes in unfavorable conditions; a thick internal wall that encoloses the DNA and a portion of the cytoplasm"
+  },
+  {
+    "word": "conjugation",
+    "definition": "process in which paramecia and some prokaryotes exchange genetic information"
+  },
+  {
+    "word": "pathogen",
+    "definition": "disease-causing agent"
+  },
+  {
+    "word": "vaccine",
+    "definition": "preparation of weakened or killed pathogens used to produce immunity to a disease"
+  },
+  {
+    "word": "antibiotic",
+    "definition": "group of drugs used to block the growth and reproduction of bacterial pathogens"
+  },
+  {
+    "word": "emerging disease",
+    "definition": "disease that appears in the population for the first time, or an old disease that suddenly becomes harder to control"
+  }
+]
