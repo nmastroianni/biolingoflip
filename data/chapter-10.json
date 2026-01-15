@@ -1,0 +1,114 @@
+[
+  {
+    "word": "cell division",
+    "definition": "process by which a cell divides into two new daughter cells"
+  },
+  {
+    "word": "asexual reproduction",
+    "definition": "process of reproduction involving a single parent that results in offspring that are genetically identical to the parent"
+  },
+  {
+    "word": "sexual reproduction",
+    "definition": "type of reproduction in which cells from two parents unite to form the first cell of a new organism"
+  },
+  {
+    "word": "chromosome",
+    "definition": "threadlike structure of DNA and protein that contains genetic information"
+  },
+  {
+    "word": "chromatin",
+    "definition": "substance found in eukaryotic chromosomes that consists of DNA tightly coiled around histones"
+  },
+  {
+    "word": "cell cycle",
+    "definition": "series of events in which a cell grows, prepares for division, and divides to form two daughter cells"
+  },
+  {
+    "word": "interphase",
+    "definition": "period of the cell cycle between cell divisions"
+  },
+  {
+    "word": "mitosis",
+    "definition": "part of eukaryotic cell division during which the cell nucleus divides"
+  },
+  {
+    "word": "cytokinesis",
+    "definition": "division of the cytoplasm to form two separate daughter cells"
+  },
+  {
+    "word": "prophase",
+    "definition": "first and longest phase of mitosis in which the genetic material inside the nucleus condenses and the chromosomes become visible"
+  },
+  {
+    "word": "centromere",
+    "definition": "region of a chromosome where the two sister chromatids attach"
+  },
+  {
+    "word": "chromatid",
+    "definition": "one of two identical \"sister\" parts of a duplicated chromosome"
+  },
+  {
+    "word": "centriole",
+    "definition": "structure in an animal cell that helps to organize cell division"
+  },
+  {
+    "word": "metaphase",
+    "definition": "phase of mitosis in which the chromosomes line up across the center of the cell"
+  },
+  {
+    "word": "anaphase",
+    "definition": "phase of mitosis in which the chromosomes separate and move to opposite ends of the cell"
+  },
+  {
+    "word": "telophase",
+    "definition": "phase of mitosis in which the distinct individual chromosomes begin to spread out into a tangle of chromatin"
+  },
+  {
+    "word": "cyclin",
+    "definition": "one of a family of proteins that regulates the cell cycle in eukaryotic cells"
+  },
+  {
+    "word": "cancer",
+    "definition": "disorder in which some of the body's cells lose the ability to control growth"
+  },
+  {
+    "word": "growth factor",
+    "definition": "one of a group of external regulatory proteins that stimulate the growth and division of cells"
+  },
+  {
+    "word": "tumor",
+    "definition": "mass of rapidly dividing cells that can damage surrounding tissue"
+  },
+  {
+    "word": "apoptosis",
+    "definition": "process of programmed cell death"
+  },
+  {
+    "word": "embryo",
+    "definition": "developing stage of a multicellular organism"
+  },
+  {
+    "word": "differentiation",
+    "definition": "process in which cells become specialized in structure and function"
+  },
+  {
+    "word": "totipotent",
+    "definition": "cells that are able to develop into any type of cell found in the body"
+  },
+  {
+    "word": "blastocyst",
+    "definition": "stage of early development in mammals that consists of a hollow ball of cells"
+  },
+  {
+    "word": "pluripotent",
+    "definition": "cells that are capable of developing into most, but not all, of the body's cell types"
+  },
+  {
+    "word": "stem cell",
+    "definition": "unspecialized cell that can give rise to one or more types of specialized cells"
+  },
+  {
+    "word": "multipotent",
+    "definition": "cell with limited potential to develop into many types of differentiated cells"
+  }
+]
