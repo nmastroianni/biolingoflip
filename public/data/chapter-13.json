@@ -1,0 +1,110 @@
+[
+  {
+    "word": "RNA",
+    "definition": "single-stranded nucleic acid that contains the sugar ribose"
+  },
+  {
+    "word": "RNA polymerase",
+    "definition": "enzyme that links together the growing chain of RNA nucleotides during transcription using a DNA strand as a template"
+  },
+  {
+    "word": "messenger RNA",
+    "definition": "type of RNA that carries copies of instructions for the assembly of amino acids into proteins from DNA to the rest of the cell"
+  },
+  {
+    "word": "ribosomal RNA",
+    "definition": "type of RNA that combines with proteins to form ribosomes"
+  },
+  {
+    "word": "transfer RNA",
+    "definition": "type of RNA that carries each amino acid to a ribosome during protein synthesis"
+  },
+  {
+    "word": "transcription",
+    "definition": "synthesis of an RNA molecule from a DNA template"
+  },
+  {
+    "word": "promoter",
+    "definition": "specific region of a gene where RNA polymerase can bind and begin transcription"
+  },
+  {
+    "word": "intron",
+    "definition": "sequence of DNA that is not involved in coding for a protein"
+  },
+  {
+    "word": "exon",
+    "definition": "expressed sequence of DNA; codes for a protein"
+  },
+  {
+    "word": "polypeptide",
+    "definition": "long chain of amino acids that makes proteins"
+  },
+  {
+    "word": "genetic code",
+    "definition": "collection of codons of mRNA, each of which directs the incorporation of a particular amino acid into a protein during protein synthesis"
+  },
+  {
+    "word": "codon",
+    "definition": "group of three nucleotide bases in mRNA that specify a particular amino acid to be incorporated into a protein"
+  },
+  {
+    "word": "translation",
+    "definition": "process by which the sequence of bases of an mRNA is converted into the sequence of amino acids of a protein"
+  },
+  {
+    "word": "anticodon",
+    "definition": "group of three bases on a tRNA molecule that are complementary to the three bases of a codon of mRNA"
+  },
+  {
+    "word": "gene expression",
+    "definition": "process by which a gene produces its product and the product carries out its function"
+  },
+  {
+    "word": "mutation",
+    "definition": "change in the genetic material of a cell"
+  },
+  {
+    "word": "point mutation",
+    "definition": "gene mutation in which a single base pair in DNA has been changed"
+  },
+  {
+    "word": "frameshift mutation",
+    "definition": "mutation that shifts the \"reading frame\" of the genetic message by inserting or deleting a nucleotide"
+  },
+  {
+    "word": "mutagen",
+    "definition": "chemical or physical agents in the environment that interact with DNA and may cause a mutation"
+  },
+  {
+    "word": "polyploidy",
+    "definition": "condition in which an organism has extra sets of chromosomes"
+  },
+  {
+    "word": "operon",
+    "definition": "in prokaryotes, a group of adjacent genes that share a common operator and promoter and are transcribed into a single mRNA"
+  },
+  {
+    "word": "operator",
+    "definition": "short DNA region, adjacent to the promoter of a prokaryotic operon, that binds repressor proteins responsible for controlling the rate of transcription of the operon"
+  },
+  {
+    "word": "RNA interference",
+    "definition": "introduction of double-stranded RNA into a cell to inhibit gene expression"
+  },
+  {
+    "word": "differentiation",
+    "definition": "process in which cells become specialized in structure and function"
+  },
+  {
+    "word": "homeotic gene",
+    "definition": "class of regulatory genes that determine the identity of body parts and regions in an animal embryo"
+  },
+  {
+    "word": "homeobox gene",
+    "definition": "DNA sequence of approximately 130 base pairs found in many homeotic genes that regulate development"
+  },
+  {
+    "word": "Hox gene",
+    "definition": "group of homeotic genes clustered together that determine the head-to-tail identity of body parts in animals"
+  }
+]
